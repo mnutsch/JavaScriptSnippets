@@ -1,2 +1,2 @@
-# base64example
-This is a quick example of how to encode and decode a string using Base64 and Javascript.
+# JavaScriptSnippets
+This repo contains code snippets for various things in JavaScript.
