@@ -11,15 +11,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-	console.log('GET received!');
+	var currentDateTime = new Date(Date.now()).toLocaleString();
+	console.log('GET received at: ' + currentDateTime);
 	console.log('req.headers == ', req.headers);
 	console.log('req.body == ', req.body);
 	res.send('GET received!')
 })
 
 app.post('/', (req, res) => {
-	console.log('POST received!');
-  console.log('req.headers == ', req.headers);
+	var currentDateTime = new Date(Date.now()).toLocaleString();
+	console.log('POST received at: ' + currentDateTime);
+	console.log('req.headers == ', req.headers);
 	console.log('req.body == ', req.body);
 	res.send('POST received!')
 })
